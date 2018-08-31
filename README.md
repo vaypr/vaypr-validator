@@ -1,6 +1,6 @@
 # Vaypr Validator
 
-*This package is in pre-alpha and not ready for public consumption. If you'd like, please take an issue and submit a pull request*
+**This package is in pre-alpha and not ready for public consumption. If you'd like, please take an issue and submit a pull request**
 
 Vaypr validator is a library useful for ensuring runtime validation of class properties using decorators and typescript's built in types to create an extremely simple, DRY and lightweight validation engine for classes.
 
@@ -49,7 +49,8 @@ const myUser = new User(0, )
 
 ## Gotchas
 
-*EVERY PROPERTY MUST HAVE A DECORATOR TO BE VALIDATED*
+**EVERY PROPERTY MUST HAVE A DECORATOR TO BE VALIDATED**
+
 In the following case:
 ```
 @Validate
@@ -81,7 +82,8 @@ foobar.validate();
 ```
 
 ## Babel
-*Not implemented*
+**Not implemented**
+
 In the case where you can't or don't want to use typescript, you can use our built in primitive types for validation.
 ```
 const { ValidateConstructor, String, Number } = require('@vaypr/validator');
